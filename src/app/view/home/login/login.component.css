@@ -1,0 +1,26 @@
+.login-title {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-content: center;
+}
+.display-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.display-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.field {
+  size: 100;
+}
+.field-width {
+  width: 100%;
+}
+a,
+u {
+  text-decoration: none;
+}

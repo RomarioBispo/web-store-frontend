@@ -1,0 +1,15 @@
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.half-width {
+  width: 50%;
+}
+.blue-background {
+  background-color: blue;
+}
+.white-background {
+  background-color: white;
+}

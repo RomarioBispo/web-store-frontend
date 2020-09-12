@@ -1,0 +1,97 @@
+<div class="centered-container blue-background">
+  <div class="white-background half-width">
+    <form class="example-form form-border">
+      <h1 style="text-align: center">Sign up</h1>
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>User name</mat-label>
+              <input matInput />
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Email</mat-label>
+              <input matInput />
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Password</mat-label>
+              <input matInput />
+            </mat-form-field>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>CPF</mat-label>
+              <input matInput />
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>RG</mat-label>
+              <input matInput />
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <table class="example-full-width" cellspacing="0">
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Country</mat-label>
+              <input matInput placeholder="Ex. Brazil" />
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>State</mat-label>
+              <input matInput placeholder="Ex. Sergipe" />
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Postal code</mat-label>
+              <input
+                matInput
+                #postalCode
+                maxlength="5"
+                placeholder="Ex. 94105"
+              />
+              <mat-hint align="end">{{ postalCode.value.length }} / 5</mat-hint>
+            </mat-form-field>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Street</mat-label>
+              <input matInput placeholder="Street name" />
+            </mat-form-field>
+          </td>
+          <td>
+            <mat-form-field class="example-full-width">
+              <mat-label>Number</mat-label>
+              <input matInput placeholder="Home number" />
+            </mat-form-field>
+          </td>
+        </tr>
+      </table>
+
+      <div class="display-row">
+        <button mat-flat-button color="primary">Signup</button>
+        <p>
+          Already registered ? back to
+          <a routerLink="/login" routerLinkActive="active">login</a>
+        </p>
+      </div>
+    </form>
+  </div>
+</div>

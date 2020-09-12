@@ -1,0 +1,39 @@
+<div style="margin:10%">
+  <div class="login-title">
+    <h1>Web Store</h1>
+    <mat-icon>shop</mat-icon>
+  </div>
+  <form class="form-width">
+    <p>
+      <mat-form-field class="field-width" appearance="standard">
+        <mat-label>email</mat-label>
+        <input matInput placeholder="email" />
+        <mat-hint>type your email</mat-hint>
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field class="field-width" appearance="standard">
+        <mat-label>password</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" />
+        <button
+          mat-icon-button
+          matSuffix
+          (click)="hide = !hide"
+          [attr.aria-label]="'Hide password'"
+          [attr.aria-pressed]="hide"
+        >
+          <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+        </button>
+        <mat-hint>type your password</mat-hint>
+      </mat-form-field>
+    </p>
+    <div class="display-row">
+      <button mat-flat-button color="primary">Login</button>
+      <p>
+        Doesn't have account yet ?
+        <a routerLink="/signup" routerLinkActive="active">sign up</a>
+      </p>
+    </div>
+  </form>
+</div>
+<router-outlet></router-outlet>
